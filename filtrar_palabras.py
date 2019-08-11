@@ -9,11 +9,13 @@ Anabel Rincón
 def filtrar_palabras(cadena,n):
     palabras_filtradas =[]
     for elemento in cadena:
+        print(elemento)
         if len(elemento) >= n:
             palabras_filtradas.append(elemento)
     return palabras_filtradas
 
 if __name__ == "__main__":
     cadena = ["arroz", "alo", "fernando", "a"]
+    cadena2 = "Hola fer"
     n = 3
-    print(filtrar_palabras(cadena,n))
+    print(filtrar_palabras(cadena2,n))
